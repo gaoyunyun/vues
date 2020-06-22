@@ -1,12 +1,17 @@
 <template>
-    <div>
+    <div class="center">
+        <Header></Header>
         <h2 class="nav">热门推荐</h2>
     </div>
 </template>
 
 <script>
+    import Header from './header/Header.vue' 
     export default {
-        
+        components:{
+               Header
+        }
+            
     }
 </script>
 
