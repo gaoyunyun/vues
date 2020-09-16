@@ -8,10 +8,21 @@
 </template>
 
 <script>
-
+    import API from "../containers/API";
     export default {
+        testApi(dateString){
+            const queryString = `?month=${dateString}`;
+            API.getTopicInfo(queryString).then((result) => {
+                this.handle(result);
+            });
+        },
+        // 数据处理逻辑
+        handle(data){
+
+        }
     }
 </script>
+
 
 <style lang="scss" scoped>
 
